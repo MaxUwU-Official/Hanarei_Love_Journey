@@ -1,0 +1,1754 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanarei's Love Journey Project</title>
+  <style>
+    html, body{
+      height: 100%;
+      margin: 0;
+    }
+    body{
+      background-color: rgb(242, 211, 243);
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+    }
+    header{
+      background-color: rgb(254, 181, 244);
+      padding: 10px;
+      color: white;
+    }
+    main {
+      flex: 1;
+    }
+    button{
+      background-color: rgb(243, 203, 255);
+      border-radius: 15px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .Home_Main_nav{
+      background-color: rgb(254, 139, 239);
+    }
+    
+    .Home_Section{}
+    .Home_Section_Main_BgP{
+      background-image: url('https://i.imgur.com/4Cd9CNf.png');
+      background-position: center;
+      background-size: cover;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      display: flex;
+      color: white;
+      height: 100vh;
+    }
+    .Home_Section_Main_Txt{
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 8px solid rgb(254, 181, 244);
+      pointer-events: none;
+      padding-right: 100px;
+      border-radius: 50px;
+      padding-left: 100px;
+      margin-top: 150px;
+      font-size: 25px;
+      padding: 25px;
+    }
+    .Home_Section_Sub_Txt{
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 8px solid rgb(254, 181, 244);
+      pointer-events: none;
+      padding-right: 100px;
+      border-radius: 50px;
+      padding-left: 100px;
+      margin-top: 50px;
+      font-size: 15px;
+      padding: 25px;
+    }
+    
+    .About_Section{}
+    .About_Section_BgP{
+      background-image: url('https://i.imgur.com/nQQQThD.png');
+      background-position: center;
+      background-size: cover;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      display: flex;
+      height: 100vh;
+      color: white;
+    }
+    .About_Section_Top_Txt{
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 8px solid rgb(254, 181, 244);
+      pointer-events: none;
+      padding-right: 100px;
+      border-radius: 50px;
+      padding-left: 100px;
+      margin-top: 100px;
+      font-size: 25px;
+      padding: 25px;
+    }
+    .About_Section_Sub_Txt{
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 8px solid rgb(254, 181, 244);
+      pointer-events: none;
+      padding-right: 100px;
+      border-radius: 50px;
+      padding-left: 100px;
+      margin-top: 25px;
+      font-size: 15px;
+      padding: 25px;
+    }
+
+    .ModTrilogy_Section{}
+    .ModTrilogy_Section_Back_Button{
+      margin-left: 20px;
+      margin-top: 25px;
+      float: left;
+    }
+    .ModTrilogy_Section_BgP{
+      background-image: url('https://i.imgur.com/ebCfzNc.png');
+      background-position: center;
+      background-size: cover;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      display: flex;
+      color: white;
+      height: 100vh;
+    }
+    .ModTrilogy_Section_BgP2{
+      background-image: url('https://i.imgur.com/sx6QP1d.png');
+      background-position: center;
+      background-size: cover;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      display: flex;
+      height: 100vh;
+      color: white;
+    }
+    .ModTrilogy_Section_div{
+      margin-top: 40px;
+    }
+    .ModTrilogy_Section_Txt{
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 8px solid rgb(254, 181, 244);
+      padding-right: 100px;
+      border-radius: 50px;
+      padding-left: 100px;
+      margin-top: 200px;
+      font-size: 25px;
+      padding: 30px;
+    }
+    .ModTrilogy_h2{
+      text-decoration: underline;
+      color: rgb(170, 19, 150);
+      font-size: 50px;
+    }
+    .ModTrilogy_h3{
+      text-decoration: underline;
+      color: rgb(191, 0, 2);
+    }
+    .ModTrilogy_ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .ModTrilogy_p_li{
+      margin-bottom: 5px;
+    }
+    
+    .Characters_Section{}
+    .Characters_Section_BgP{
+      background-image: url('https://i.imgur.com/4Cd9CNf.png');
+      background-position: center;
+      background-size: cover;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      display: flex;
+      height: 100vh;
+      color: white;
+    }
+    .Characters_Section_Back_Button{
+      margin-left: 20px;
+      margin-top: 15px;
+      float: left;
+    }
+    .Characters_Section_Img{
+      padding-right: 20px;
+      margin-top: 100px;
+      width: 200px;
+      float: left;
+    }
+    .Characters_Section_Portrait_Img{
+      padding-right: 20px;
+      margin-left: -50px;
+      margin-top: 240px;
+      width: 250px;
+      float: left;
+    }
+    .Characters_Section_Top_Text{
+      text-decoration: underline;
+      color: rgb(170, 19, 150);
+      text-align: center;
+      margin-top: 150px;
+      font-size: 40px;
+    }
+    .Characters_Section_Sub_Text{
+      border: 2px dashed rgb(220, 185, 215);
+      border-width: thick;
+      margin-right: 30px;
+      border-radius: 8px;
+      margin-left: 355px;
+      text-align: left;
+      font-size: 16px;
+      padding: 10px;
+    }
+    .Characters_Section_Panel{
+      border: 2px solid rgb(220, 185, 215);
+      margin-bottom: 10px;
+      margin-right: 150px;
+      border-radius: 8px;
+      text-align: center;
+      margin-left: 450px;
+      font-size: 16px;
+      padding: 15px;
+    }
+    .Characters_Section_Top_Text_NoImage{
+      text-decoration: underline;
+      color: rgb(170, 19, 150);
+      text-align: center;
+      margin-top: 150px;
+      font-size: 40px;
+    }
+    .Characters_Section_Sub_Text_NoImage{
+      border: 2px dashed rgb(220, 185, 215);
+      border-width: thick;
+      margin-right: 200px;
+      border-radius: 8px;
+      margin-left: 200px;
+      text-align: left;
+      font-size: 16px;
+      padding: 10px;
+    }
+    .Characters_Section_Panel_NoImage{
+      border: 2px solid rgb(220, 185, 215);
+      margin-right: 300px;
+      border-radius: 8px;
+      text-align: center;
+      margin-left: 300px;
+      font-size: 16px;
+      padding: 15px;
+    }
+   
+    .Clarifications_Section{}
+    .Clarifications_Section_h1{
+      text-decoration: underline;
+      color: rgb(191, 0, 0);
+      font-size: 45px;
+    }
+    .Clarifications_Section_div_nav{
+      margin-bottom: 25px;
+      margin-right: 250px;
+      margin-left: 250px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .Clarifications_Section_Button{
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+    .Clarifications_Section_Back_Button{
+      margin-left: 20px;
+      margin-top: 15px;
+      float: left;
+    }
+    .Clarifications_Section_h2{
+      font-size: 25px;
+    }
+    .Clarifications_Section_Panel{
+      border: 2px solid rgb(220, 185, 215);
+      margin-right: 200px;
+      border-radius: 8px;
+      text-align: center;
+      margin-left: 200px;
+      margin-top: 40px;
+      font-size: 16px;
+      padding: 15px;
+    }
+    .Clarifications_Section_Top_Text{
+      text-decoration: underline;
+      color: rgb(170, 19, 150);
+      text-align: center;
+      margin-top: 10px;
+      font-size: 40px;
+    }
+    .Clarifications_Section_Sub_Text{
+      font-size: 16px;
+    }
+
+    .Bugs_Section{}
+    .Bugs_Section_div{
+      text-align: left;
+    }
+    .Bugs_Section_h1_h2{
+      text-align: center;
+    }
+    .Bugs_Section_Build{
+      font-weight: bold;
+    }
+    .Bugs_Section_Button_Top_Text{
+      background-color: rgb(243, 203, 255);
+      box-sizing: border-box;
+      word-wrap: break-word;
+      pointer-events: none;
+      border-radius: 15px;
+      text-overflow: clip;
+      white-space: normal;
+      padding: 10px 20px;
+      max-width: 1000px;
+      overflow: visible;
+      text-align: left;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .Bugs_Section_Button_Sub_Text{
+      background-color: rgb(243, 203, 255);
+      pointer-events: none;
+      border-radius: 15px;
+      padding: 10px 20px;
+      text-align: left;
+      cursor: pointer;
+      font-size: 15px;
+      margin: 5px;
+    }
+    
+    .Contact_Section{}
+    .Contact_Section_Button_Panel{
+      background-color: rgb(243, 203, 255);
+      pointer-events: none;
+      border-radius: 15px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 18px;
+      margin: 5px;
+    }
+    .page{
+      display: none;
+    }
+    footer{
+      background-color: rgb(254, 181, 244);
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Hanarei's Love Journey Project</h1>
+    </div>
+  </header>
+  <nav class="Home_Main_nav">
+    <button onclick="showPage('Home')">Home</button>
+    <button onclick="showPage('About')">About</button>
+    <button onclick="showPage('ModTrilogy')">Mods</button>
+    <button onclick="showPage('Mods')">Characters</button>
+    <button onclick="showPage('Clarifications')">Clarifications</button>
+    <button onclick="showPage('BugsReport')">Bugs Reporting</button>
+    <button onclick="showPage('Contact')">Contact</button>
+    <button onclick="showPage('SocialMedia')">Social Media</button>
+  </nav>
+  
+  <!-- Page Content -->
+  <main>
+    <div id="Home" class="page" style="display: block;">
+      <div class="Home_Section_Main_BgP">
+        <div class="Home_Section_Main_Txt">
+          <b>
+            <h2>Welcome to Hanarei's Love Journey Project!</h2>
+          </b>
+        </div>
+        <div class="Home_Section_Sub_Txt">
+          <p>Click on buttons in Navigation Section to proceed deeper into the website!</p>
+        </div>
+      </div>  
+    </div>
+    <div id="About" class="page" style="display: none;">
+      <div class="About_Section_BgP">
+        <div class="About_Section_Top_Txt">
+          <b>
+            <h2>About Hanarei's Love Journey Project</h2>
+          </b>
+        </div>
+        <div class="About_Section_Sub_Txt">
+          <p>This is the content for the About page.</p><br>
+        </div>
+      </div>
+    </div>
+    <div id="ModTrilogy" class="page" style="display: none;">
+      <div class="ModTrilogy_Section_BgP">
+        <div class="ModTrilogy_Section_div">
+          <div class="ModTrilogy_Section_Txt">
+            <h2><b>Choose a mod:</b></h2>
+            <button onclick="showPage('SakuraMod')">Sakura Mod</button><br><br>
+            <button onclick="showPage('DeadlyDesires')">Deadly Desires</button><br><br>
+            <button onclick="showPage('HanareiLoveJourney')">Hanarei's Love Journey</button><br><br>
+            <p><i>Click on specific mod.</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="SakuraMod" class="page" style="display: none;">
+        <div class="ModTrilogy_Section_BgP2">
+          <button class="ModTrilogy_Section_Back_Button" onclick="showPage('ModTrilogy')">← Back</button>
+          <div class="ModTrilogy_Section_Txt" style="background-color: rgba(0, 0, 0, 0.6); margin-top: 30px;">
+            <div style="font-size: 20px;">
+              <h2 class="ModTrilogy_h2" style="margin-top: -5px;">Sakura Mod</h2>
+              <h3 class="ModTrilogy_h3">About</h3>
+              <p>Sakura Mod is a FIRST mod of this project.</p>
+              <p>Sakura mod is an ongoing mod in The year in 2025.</p>
+              <h3 class="ModTrilogy_h3">Gameplay</h3>
+              <p>The protagonist is Ayano Aishi.</p>
+              <p>The previous 10 rivals were already eliminated.</p>
+              <p>There are new 10 rivals and must be eliminated before their week ends.</p>
+              <h3 class="ModTrilogy_h3" style="margin-bottom: 15px; margin-top: 25px;">Features</h3>
+              <ul class="ModTrilogy_ul">
+                <li class="ModTrilogy_p_li">Storylines</li>
+                <li class="ModTrilogy_p_li">Set Of Obstacles</li>
+                <li class="ModTrilogy_p_li">Challenges For Player</li>
+                <li class="ModTrilogy_p_li">Gameplay Experiences In Each Week</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="DeadlyDesires" class="page" style="display: none;">
+        <div class="ModTrilogy_Section_BgP2">
+          <button class="ModTrilogy_Section_Back_Button" onclick="showPage('ModTrilogy')">← Back</button>
+          <div class="ModTrilogy_Section_Txt" style="background-color: rgba(0, 0, 0, 0.6); margin-top: 15px;">
+            <div style="font-size: 20px;">
+              <h2 class="ModTrilogy_h2" style="margin-top: -5px;">Deadly Desires</h2>
+              <h3 class="ModTrilogy_h3">About</h3>
+              <p>Deadly desire is a SECOND mod of this project.</p>
+              <p>This Mod takes place in the year of 1995 and 2035.</p>
+              <h3 class="ModTrilogy_h3" style="margin-top: 30px;">1995s Mode</h3>
+              <p>The protagonist is Erika Hayashi, mother of Amaya Hayashi.</p>
+              <p>You must eliminate 10 rivals across 10 school weeks.</p>
+              <p>Each week a new rival appears and must be eliminated before the week ends, with difficulty increasing each week.</p>
+              <h3 class="ModTrilogy_h3" style="margin-top: 30px;">2035s Mode</h3>
+              <p>The protagonist is Amaya Hayashi, daughter of Erika Hayashi.</p>
+              <p>You must eliminate 5 rivals in 1 school week.</p>
+              <p>Each day a new rival appears and must be eliminated before the day ends, with difficulty increasing daily.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="HanareiLoveJourney" class="page" style="display: none;">
+        <div class="ModTrilogy_Section_BgP2">
+          <button class="ModTrilogy_Section_Back_Button" onclick="showPage('ModTrilogy')">← Back</button>
+          <div class="ModTrilogy_Section_Txt" style="background-color: rgba(0, 0, 0, 0.6); margin-top: 30px;">
+            <div style="font-size: 20px;">
+              <h2 class="ModTrilogy_h2">Hanarei's Love Journey</h2>
+              <h3 class="ModTrilogy_h3">About</h3>
+              <p>Hanarei's love Journey is a THIRD mod of this project.</p>
+              <p>This Mod takes place in the year of 2055.</p>
+              <h3 class="ModTrilogy_h3" style="margin-top: 25px;">Gameplay</h3>
+              <p>The protagonist is Hanarei Aishi, daughter of Ayano Aishi.</p>
+              <p>You must eliminate 10 Rivals across 10 school weeks.</p>
+              <p>Each week a new rival appears and must be eliminated before the week ends, with difficulty increasing each week.</p>
+              <h3 class="ModTrilogy_h3" style="margin-bottom: 15px; margin-top: 25px;">Features</h3>
+              <ul class="ModTrilogy_ul">
+                <li class="ModTrilogy_p_li">Storylines</li>
+                <li class="ModTrilogy_p_li">Set Of Obstacles</li>
+                <li class="ModTrilogy_p_li">Challenges For Player</li>
+                <li class="ModTrilogy_p_li">Gameplay Experiences In Each Week</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div id="Mods" class="page" style="display: none;">
+      <div class="ModTrilogy_Section_div">
+        <h2>Choose a mod:</h2>
+        <button onclick="showPage('S_Characters')">Sakura Mod</button><br><br>
+        <button onclick="showPage('D_Mode')">Deadly Desires</button><br><br>
+        <button onclick="showPage('H_Characters')">Hanarei's Love Journey</button><br><br>
+        <p><i>Click on specific mod to see characters.</i></p>
+      </div>
+    </div>
+   
+    <!-- Sakura_Characters content -->
+    <div id="S_Characters" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('Mods')">← Back</button><br><br>
+      <div class="ModTrilogy_Section_div">
+        <h1>Choose a character:</h1>
+        <h2>Senpai:</h2>
+        <button onclick="showPage('S_Senpai')">Taro Yamada</button><br><br><hr>
+        <h2>Protagonist:</h2>
+        <button onclick="showPage('Ayano')">Ayano Aishi</button><br><br><hr>
+        <h2>Rivals:</h2>
+        <button onclick="showPage('S_Midu')">Midu Akotaka</button>
+        <button onclick="showPage('S_Sheino')">Sheino Kaisho</button>
+        <button onclick="showPage('S_Mono')">Mono Tenso</button>
+        <button onclick="showPage('S_Puro')">Puro Sawago</button>
+        <button onclick="showPage('S_Shonu')">Shonu Amoka</button>
+        <button onclick="showPage('S_Takagi')">Takagi Masami</button>
+        <button onclick="showPage('S_Teika')">Teika Yanshiwana</button>
+        <button onclick="showPage('S_Mio')">Mio Dashokono</button>
+        <button onclick="showPage('S_Ryo')">Ryo Rikitake</button>
+        <button onclick="showPage('S_Yuri')">Yuri Kamonsho</button><br><br><hr>
+        <h2>Important:</h2>
+        <button onclick="showPage('S_Emi')">Emi Akiyama</button><hr>
+        <h2>Other:</h2>
+        <button onclick="showPage('...')">...</button><hr>
+        <p><i>Click on specific character to load.</i></p>
+      </div>
+    </div>
+    <div>
+      <!-- Sakura_Main -->
+      <div>
+        <div id="S_Senpai" class="page" style="display: none;">
+        <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+        <img class="Characters_Section_Img" src="https://yanderesimulator.com/img/characters/senpai-kun.png">
+        <h2 class="Characters_Section_Top_Text">Taro Yamada</h2>
+        <div class="Characters_Section_Sub_Text">
+          <i>
+            <p>Taro is mostly a Loner who enjoys nature more than the company of people. However, he is friendly towards anyone who wants to talk to him.</p><br>
+            <p>Though an introvert, he doesn't seem to be shy. He is normally gentle and considerate.</p><br>
+            <p>Over the course of the school year, ten different girls will fall in love with Senpai. There is a myth at school that if a girl confesses her love to a boy under the cherry tree behind the school on a Friday, the two of them will love each other forever. Every girl who falls in love with Senpai plans to confess at 6:00 PM on Friday. If there is anyone who wants to keep Senpai all to herself, she has until 6:00 PM on Friday to eliminate the competition.</p>
+          </i>
+        </div><br>
+        <div class="Characters_Section_Panel">
+          <div><span><b>Role</b>: <i>Student</i></span></div><br><br>
+          <div><span><b>Status</b>: <i>Single</i></span></div><br><br>
+          <div><span><b>Personality</b>: <i>Friendly and Respectful</i></span></div><br><br>
+          <div><span><b>Appearance</b>: <i>Week 0</i></span></div><br><br>
+          <div><span><b>Weakness</b>: <i>?????</i></span></div>
+        </div>
+      </div>
+        <div id="Ayano" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Img" src="https://yanderesimulator.com/img/characters/yandere-chan-normal.png">
+      <h2 class="Characters_Section_Top_Text">Ayano Aishi</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Ayano Aishi is the protagonist of Yandere Simulator. She is known as "Yandere-chan" to players of the game, and has been given the cute nickname "Yan-chan" by her classmates.</p><br>
+          <p>Ayano attends a post-highschool academy called "Akademi." On the first day of her second year at Akademi, Ayano came into physical contact with a young man named Taro Yamada. In that moment, she gained the ability to experience everything that had been missing from her life; she felt complete, she felt fulfilled, and she felt powerful emotions. </p><br>
+          <p>Without a moment's hesitation, Ayano know exactly what she has to do. Eliminated her rivals as soon as possible, by any means necessary, no matter what the cost.</p>
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Student</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Protagonist</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Lovesick</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 0</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Obsessive</i></span></div>
+      </div>
+    </div>
+      </div>
+      <!-- Sakura_Rivals -->
+      <div>
+        <div id="S_Midu" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/2bDmEd0.png" alt="Midu_Akotaka_Portrait">
+      <h2 class="Characters_Section_Top_Text">Midu Akotaka</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Midu Akotaka is a kind-hearted girl with a deep love for plants, nature, and all things green. She spends most of her time in the Gardening Club, tending flowers and teaching others how to care for them.</p><br>
+          <p>She’s the leader of the Gardening Club and one of the top biology students at Akademi, often seen carrying books about plant life or experimenting with new ways to help things grow.</p><br>
+          <p>Midu dreams of becoming a florist and helping her family’s flower shop bloom into something bigger - a place where people can reconnect with nature and find peace in greenery. She is hoping to confess her feelings before the week is over.</p>
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>2. Leader of the Gardening Club</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Guardian Angel</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 1</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Misunderstanding</i></span></div>
+      </div>
+    </div>
+        <div id="S_Sheino" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/FjXZ9TI.png" alt="Sheino_Kaisho_Portrait">
+      <h2 class="Characters_Section_Top_Text">Sheino Kaisho</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Sheino Kaisho is the charismatic and effortlessly talented leader of the Drama Club, admired by both students and teachers alike for her stage presence and natural charm. She’s the kind of person who can make everyone around her feel important, and she’s built her popularity on that warmth. However, beneath her friendly exterior lies a mind that is always calculating, always aware of how she can use every piece of information to her advantage.</p><br>
+          <p>Sheino doesn’t need to bully or intimidate her classmates like some of the other students at Akademi. Instead, she has a more subtle weapon: gossip. She’s a keen listener and knows exactly who to talk to and when, always collecting tidbits of information. If someone tells her a secret or shares some juicy gossip, Sheino won’t hesitate to use it to climb higher in the social hierarchy or to subtly turn the tide in her favor.</p><br>
+          <p>She might not start drama herself, but she’s always ready to fan the flames when it serves her interests. She’ll act like a confidant, all while positioning herself in a way that guarantees she comes out on top. In Sheino's world, the Drama Club is her stage—and everyone else is just an actor in her well-scripted play.</p>
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>President of the Drama Club</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Arrogant and Selfish</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 2</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Misidentified</i></span></div>
+      </div>
+    </div>
+        <div id="S_Mono" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/oZpjCAi.png" alt="Mono_Tenso_Portrait">
+      <h2 class="Characters_Section_Top_Text">Mono Tenso</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Mono Tenso is the second leader of the Gaming Club, known for her energetic, larger-than-life personality and her unwavering passion for gaming. With her fierce competitive streak and love for all things digital, she’s often the first one to jump into a new game, always pushing herself and others to level up.</p><br>
+          <p>Her energy is contagious — she inspires those around her to work harder and play smarter, making her a beloved figure among her fellow club members. While Mono is known for her skills and drive, she never forgets the importance of having fun, making sure everyone enjoys the game, no matter their skill level.</p><br>
+          <p>Her confidence and gaming prowess have earned her quite a following, with some boys trailing behind her, hoping to catch her attention or impress her. But Mono’s focus remains on one thing: proving she’s the best gamer at Akademi, and she’s not about to let anything or anyone distract her from that goal.</p>
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>2. Leader of the Gaming Club</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Energetic and Playful</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 3</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Electricity</i></span></div>
+      </div>
+    </div>
+        <div id="S_Puro" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/LT3FkxS.png" alt="Puro_Sawago_Portrait">
+      <h2 class="Characters_Section_Top_Text">Puro Sawago</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Puro Sawago is a quiet and introspective member of the Art Club, often seen with her sketchbook in hand, lost in her own world. Shy and socially awkward, she tends to avoid drawing attention to herself, blending into the background. Despite her reserved nature, Puro’s passion for art runs deep, though her works often leave others feeling uncertain. Her drawings lack clear themes, sometimes appearing unsettling or cryptic, reflecting the turmoil and confusion she feels inside.</p><br>
+          <p>A perfectionist at heart, Puro struggles under the pressure of expectations, leading her to frequently shift between different ideas and projects. She can never seem to settle on a single subject long enough to finish a piece, constantly second-guessing her work. Her timidity only amplifies this, making it even harder for her to express herself confidently, especially in a group setting.</p><br>
+          <p>Though she’s shy and keeps to herself, there’s a depth to Puro that those who get close to her can see - a quiet brilliance that’s often hidden behind her uncertainty. Her artistic journey may be a struggle, but it’s also a search for meaning and a way to express emotions she’s unable to articulate with words. Her withdrawn demeanor and socially awkward tendencies often leave others to wonder what lies beneath the surface, but to Puro, it’s all part of the process. In the end, her art is her own reflection, complex and unpredictable, much like herself.</p>
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Member of the Art Club</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Timid and Socially Awkward</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 4</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Heights</i></span></div>
+      </div>
+    </div>
+        <div id="S_Shonu" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/TKkoP3i.png" alt="Shonu_Amoka_Portrait">
+      <h2 class="Characters_Section_Top_Text">Shonu Amoka</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Shonu Amoka is one of the most popular and well-liked students at Akademi, known for her bubbly and infectious personality that lights up any room she enters. Always wearing a bright smile and exuding warmth, Shonu has an uncanny ability to make people feel at ease, even on their worst days. Her energy is so contagious that it’s impossible not to feel a little lighter when she’s around.</p><br>
+          <p>Whether it’s through her cheerful greetings, her spontaneous bursts of laughter, or her ever-positive outlook, Shonu is a natural source of joy. Her presence can turn even the dullest moments into something fun, and it’s no surprise that many students are drawn to her. Her lively spirit has earned her a loyal following, with some classmates constantly hanging around, eager to bask in her positivity.</p><br>
+          <p>But behind her endlessly cheerful exterior, there’s more to Shonu than just the girl with a bright smile. Despite her outward confidence. Her kindness and optimism make her a beloved figure at Akademi, but those who are closest to Shonu know that it’s not just her infectious energy that draws people in - it’s her genuine care and warmth that makes her a true friend to all.</p>
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Everybody's Sunshine Girl</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Extroverted and Kind</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 5</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Solitude</i></span></div>
+      </div>
+    </div>
+        <div id="S_Takagi" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/PnMVwld.png" alt="Takagi_Masami_Portrait">
+      <h2 class="Characters_Section_Top_Text">Takagi Masami</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Takagi Masami is a refined and graceful member of the Cooking Club, known for her gentle, ladylike demeanor that leaves a lasting impression on everyone she meets. With her quiet elegance and soft-spoken nature.</p><br>
+          <p>In the kitchen, however, Masami’s talent truly shines. Her cooking and baking skills are nothing short of extraordinary, allowing her to effortlessly create dishes that leave everyone in awe. Whether it’s a delicate pastry or a savory entrée, Masami’s attention to detail and precision in the kitchen set her apart from her clubmates. Her mastery of flavors and techniques earns her the admiration of both her fellow Cooking Club members and the students who are lucky enough to taste her creations.</p><br>
+          <p>While she may not seek the spotlight, Masami’s quiet competence speaks volumes. Her food is not just nourishment, but an experience - one that is crafted with love, care, and an unmatched level of skill. Though others often look to her for guidance, Masami remains humble, never boasting about her talents but letting her dishes speak for themselves. Her gentle nature and culinary prowess have earned her respect across the school, and Masami’s reputation as a gifted chef continues to grows.</p> 
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Member of the Cooking Club</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Graceful and Lady-like</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 6</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Unprepared Food</i></span></div>
+      </div>
+    </div>
+        <div id="S_Teika" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/Bn47cY8.png" alt="Teika_Yanshiwana_Portrait">
+      <h2 class="Characters_Section_Top_Text">Teika Yanshiwana</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Teika Yanshiwana is Akademi’s top student, known not only for her exceptional intellect but for her relentless pursuit of perfection. On the surface, she’s a model of academic excellence-her name at the top of every leaderboard, her answers always precise. But beneath this polished exterior lies a constant, nagging thought: "I am not good enough."</p><br>
+          <p>It’s this inner drive that pushes Teika beyond what anyone else considers reasonable. When a teacher dismisses a subject as irrelevant, Teika dives deeper into it-compelled by a belief that even the smallest gap in her knowledge could be the one thing standing between her and true mastery. She can’t afford to leave any stone unturned, no matter how inconsequential it might seem to others. For her, there’s no such thing as "enough"-there’s only more to learn, more to achieve, more to prove. Her obsession with knowledge leads her to spend countless hours in the library, long after the sun has set and others have gone home. Surrounded by towering shelves of books, Teika finds solace in the quiet rustle of pages turning, the flickering of overhead lights, and the endless sea of information waiting to be absorbed. Here, she can control her surroundings, immerse herself in her studies, and escape the uncertainty that often shadows her own self-worth.</p><br>
+          <p>Despite her achievements, Teika’s humility is palpable. She doesn’t see herself as "special," but as someone who is always becoming-a student forever, even when she’s at the top. In her mind, knowledge is the only thing she can truly perfect, the only thing that can quiet that persistent voice of doubt. While others may admire her brilliance, Teika is haunted by the feeling that she’s never quite done enough. Her academic excellence is her way of silencing that voice, if only for a moment. Teika doesn’t strive for recognition, she strives for peace. Not the kind of peace that comes from accolades, but the kind that comes from knowing, with certainty, that she’s done everything she can to be the best.</p>
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Top Student</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>"Dunning-Kruger Effect" and "Intellectual humility"</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 7</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>False Accusations</i></span></div>
+      </div>
+    </div>
+        <div id="S_Mio" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/DDPuOXR.png" alt="Mio_Dashokono_Portrait">
+      <h2 class="Characters_Section_Top_Text">Mio Dashokono</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Mio Dashokono is a member of the Delinquents, feared and respected in equal measure across Akademi. With a short temper and a reputation for settling disputes with her fists rather than words, Mio thrives on confrontation. Where others talk things out, she acts - swiftly and without hesitation.</p><br>
+          <p>Her abrasive attitude and unpredictable behavior make her unwelcome in most places on campus. Teachers keep their distance, and many students avoid crossing her path altogether. Whispers follow her wherever she goes - rumors of fights behind the gym, vandalism, and "activities" that no one dares to confirm. Whether the stories are true or not, Mio doesn’t care. In fact, she seems to enjoy the fear her presence inspires.</p><br>
+          <p>Despite her rough edges, there’s something compelling about her. Beneath the scowl and the cigarette smoke is a girl who plays by her own rules, never pretending to be someone she’s not. She doesn’t ask for acceptance - and she certainly doesn’t need it. Those few who earn her respect find a fiercely loyal ally, someone who won’t hesitate to stand up for them no matter the cost.</p> 
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Delinquent</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Tough and Intimidating</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 8</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Fire</i></span></div>
+      </div>
+    </div>
+        <div id="S_Ryo" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/NxxGk1h.png" alt="Ryo_Rikitake_Portrait">
+      <h2 class="Characters_Section_Top_Text">Ryo Rikitake</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Ryo Rikitake is a shy and secretive student who tends to linger in the background, rarely speaking unless spoken to. Her quiet presence often goes unnoticed. With her mother teaching Class 2-2, Ryo has access to faculty-only areas most students cannot enter, and that unusual privilege hasn’t escaped the attention of her classmates.</p><br>
+          <p>Many students find her unsettling, especially when she appears in places she shouldn’t be. Some believe she’s hiding something - though no one can say what.</p><br>
+          <p>Ryo never addresses the rumors. She says nothing... and disappears down the hallway.</p> 
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Freshman</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Shy and Reserved</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 9</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>Sharp Objects</i></span></div>
+      </div>
+    </div>
+        <div id="S_Yuri" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+      <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/Kbhy1vF.png" alt="Yuri_Kamonsho_Portrait">
+      <h2 class="Characters_Section_Top_Text">Yuri Kamonsho</h2>
+      <div class="Characters_Section_Sub_Text">
+        <i>
+          <p>Yuri Kamonsho is a high-ranking member of the Student Council, known across Akademi for her calm, commanding presence and unwavering commitment to order. Always composed and perfectly polished, Yuri carries herself with the kind of discipline and formality that turns heads - and silences rooms. To most students, she comes across as cold, distant, and almost robotic in the way she enforces school rules with unwavering precision. She’s not one for small talk or emotional displays. When Yuri speaks, it’s with clarity, purpose, and a tone that leaves little room for argument. She is strict to the letter, often seen patrolling hallways, mediating conflicts, and keeping a close eye on those who might disrupt the peace. Many students find her intimidating, and few dare to challenge her authority - those who do rarely make the same mistake twice.</p><br>
+          <p>But beneath that hard, diplomatic exterior is a side of Yuri few ever see. She may not show it outwardly, but her actions reveal her deep concern for the well-being of others. Every rule she enforces, every warning she issues, is rooted in a desire to protect her fellow students. Whether it’s stepping in to de-escalate a brewing fight or quietly checking in on someone skipping class, Yuri never overlooks a potential threat to a student’s safety - even if her methods seem impersonal. Her sense of justice is not fueled by ego or a desire for control, but by a sincere belief that structure creates security. Order, in her eyes, isn’t about dominance - it’s about care. Even if no one thanks her for it, even if she's misunderstood, Yuri is fine with being seen as the “cold enforcer,” as long as it means others can walk the halls without fear.</p><br>
+          <p>In rare moments, those closest to her catch glimpses of the warmth buried deep within - a subtle gesture of kindness, a quiet word of encouragement, or a soft look that betrays her true feelings. She may not be quick to open up, but Yuri Kamonsho is far more than the mask she wears. She is precise, principled, and unwavering in her mission to serve and protect - not just the rules, but the people behind them.</p> 
+        </i>
+      </div><br>
+      <div class="Characters_Section_Panel">
+        <div><span><b>Role</b>: <i>Member of the Student Council</i></span></div><br><br>
+        <div><span><b>Status</b>: <i>Rival</i></span></div><br><br>
+        <div><span><b>Personality</b>: <i>Strict and Straightforward</i></span></div><br><br>
+        <div><span><b>Appearance</b>: <i>Week 10</i></span></div><br><br>
+        <div><span><b>Weakness</b>: <i>???</i></span></div>
+      </div>
+    </div>
+      </div>
+      <!-- Sakura_Important -->
+      <div>
+        <div id="S_Emi" class="page" style="display: none;">
+          <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+          <img class="Characters_Section_Portrait_Img" src="https://i.imgur.com/qygKrK9.png" alt="Emi_Akiyama_Portrait">
+          <h2 class="Characters_Section_Top_Text">Emi Akiyama</h2>
+          <div class="Characters_Section_Sub_Text">
+            <i>
+              <p>Emi Akiyama is one half of Akademi’s most inseparable friendship duo, always seen by the side of her best friend, Midu Akotaka. Bright, bubbly, and endlessly outgoing, Emi is the kind of girl who lights up a room the moment she walks in. She talks to everyone, makes friends easily, and brings a natural warmth wherever she goes - even if she can sometimes be a little too curious for her own good. Her extroverted personality makes her easy to approach, and many students rely on her for advice, comfort, or just a cheerful presence during stressful days. Loyal to a fault, Emi is especially protective of Midu, and it's rare to see one without the other. They’ve been close since Midu’s first year, and their bond has only grown stronger with time.</p><br>
+              <p>While Emi seems like someone who’s always been this way, her past tells a different story. Few know that during middle school, she was extremely introverted - shy, withdrawn, and reluctant to open up to anyone. Something shifted during that time, though she never talks about it in detail. Whatever happened changed her, and now she lives each day determined to embrace connection rather than avoid it. </p><br>
+              <p>Despite her love for gardening, Emi has never joined the Gardening Club. When asked, she simply shrugs and says, "It's just a hobby, not my future." But some wonder if there’s more to that answer - something she chooses not to explain. Though she keeps some pieces of herself guarded, Emi remains a beloved presence at Akademi. She's the friend who sticks by you, the voice that lifts you up, and the smile that reminds you not to take life too seriously - even when she carries more than she lets on.</p>
+            </i>
+        </div><br>
+        <div class="Characters_Section_Panel">
+          <div><span><b>Role</b>: <i>Midu Akotaka's Best Friend</i></span></div><br><br>
+          <div><span><b>Status</b>: <i>Obstacle</i></span></div><br><br>
+          <div><span><b>Personality</b>: <i>Bubbly and Kind</i></span></div><br><br>
+          <div><span><b>Appearance</b>: <i>Week 1</i></span></div><br><br>
+          <div><span><b>Weakness</b>: <i>???</i></span></div>
+        </div>
+      </div>
+      </div>
+      <!-- Sakura_Others -->
+      <div>
+        <div id="..." class="page" style="display: none;">
+          <button class="Characters_Section_Back_Button" onclick="showPage('S_Characters')">← Back</button><br>
+          <i>
+            <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+            <h2>...yet...</h2>
+          </i>
+        </div>
+      </div>
+    </div>
+   
+    <div id="D_Mode" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('Mods')">← Back</button><br><br>
+      <div class="ModTrilogy_Section_div">
+        <h1>Choose a Section:</h1>
+        <h2>Hayashi Family:</h2>
+        <button onclick="showPage('D_Hayashi_Characters')">Hayashi Members</button><br><br><hr>
+        <h2>Modes:</h2>
+        <button onclick="showPage('D_1995_Characters')">1995s Mode</button>
+        <button onclick="showPage('D_2035_Characters')">2035s Mode</button><br><br><hr>
+        <p><i>Click on specific Section to load.</i></p>
+      </div>
+    </div>
+    <div>
+      <!-- Hayashi Family -->
+      <div id="D_Hayashi_Characters" class="page" style="display: none;">
+        <button class="Characters_Section_Back_Button" onclick="showPage('D_Mode')">← Back</button><br><br>
+        <div class="ModTrilogy_Section_div">
+          <h1>Hayashi Members:</h1> <!--10-->
+          <h2>1780:</h2><button onclick="showPage('D_H_1')">1. Hayashi</button><br><br>
+          <h2>1800:</h2><button onclick="showPage('D_H_2')">2. Hayashi</button><br><br>
+          <h2>1830:</h2><button onclick="showPage('D_H_3')">3. Hayashi</button><br><br>
+          <h2>1850:</h2><button onclick="showPage('D_H_5')">5. Hayashi</button><br><br>
+          <h2>1895:</h2><button onclick="showPage('D_H_7')">7. Hayashi</button><br><br>
+
+          <h2>1918:</h2><button onclick="showPage('D_H_8')">8. Hayashi</button><br><br>
+          <h2>1975:</h2><button onclick="showPage('D_H_10')">10. Hayashi</button><br><br>
+          <h2>1995:</h2><button onclick="showPage('D_H_11_Erika')">Erika Hayashi</button>
+                        <button onclick="showPage('D_H_12')">12. Hayashi</button><br><br>
+          <h2>2035:</h2><button onclick="showPage('D_H_15_Amaya')">Amaya Hayashi</button><br><br>
+          <hr><hr><hr><hr>
+          <h1>Corrupted Hayashi Members:</h1>
+          <h1>Alive:</h1> <!--2 Alive-->
+          <h2>1950:</h2><button onclick="showPage('D_H_9')">9. Hayashi</button><br><br>
+          <h2>2001:</h2><button onclick="showPage('D_H_13')">13. Hayashi</button><br><br><hr>
+          <h1>Dead:</h1> <!--3 Dead-->
+          <h2>1830:</h2><button onclick="showPage('D_H_4')">4. Hayashi</button><br><br>
+          <h2>1895:</h2><button onclick="showPage('D_H_6')">6. Hayashi</button><br><br>
+          <h2>2010:</h2><button onclick="showPage('D_H_14')">14. Hayashi</button><br><br>
+          <hr>
+          
+          <p><i>Click on specific character to load.</i></p>
+        </div>
+      </div>
+      <div>
+        <!-- Hayashi_Members-->
+        <div>
+          <div id="D_H_1" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_2" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_3" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_5" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_7" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_8" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_10" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_11_Erika" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_12" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_15_Amaya" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+        
+        <!-- Corrupted_Hayashi_Members -->
+        <div>
+          <!-- Alive -->
+          <div>
+            <div id="D_H_9" class="page" style="display: none;">
+              <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+              <i>
+                <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+                <h2>...yet...</h2>
+              </i>
+            </div>
+            <div id="D_H_13" class="page" style="display: none;">
+              <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+              <i>
+                <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+                <h2>...yet...</h2>
+              </i>
+            </div>
+          </div>
+          
+          <!-- Dead -->
+          <div>
+            <div id="D_H_4" class="page" style="display: none;">
+              <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+              <i>
+                <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+                <h2>...yet...</h2>
+              </i>
+            </div>
+            <div id="D_H_6" class="page" style="display: none;">
+              <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+              <i>
+                <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+                <h2>...yet...</h2>
+              </i>
+            </div>
+            <div id="D_H_14" class="page" style="display: none;">
+              <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+              <i>
+                <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+                <h2>...yet...</h2>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- 1995s Mode -->
+      <div id="D_1995_Characters" class="page" style="display: none;">
+        <button class="Characters_Section_Back_Button" onclick="showPage('D_Mode')">← Back</button><br><br>
+        <div class="ModTrilogy_Section_div">
+          <h1>Choose a character:</h1>
+          <h2>Senpai:</h2>
+          <button onclick="showPage('D_1995_Hiroaki')">Hiroaki Watanabe</button><br><br><hr>
+          <h2>Protagonist:</h2>
+          <button onclick="showPage('D_H_11_Erika')">Erika Hayashi</button><br><br><hr>
+          <h2>Rivals:</h2>
+          <button onclick="showPage('D_1995_Rival_1')">Kaiya Shibata</button>
+          <button onclick="showPage('D_1995_Rival_2')">Miku Fujimoto</button>
+          <button onclick="showPage('D_1995_Rival_3')">Tomo Matsuda</button>
+          <button onclick="showPage('D_1995_Rival_4')">Nanami Kobayashi</button>
+          <button onclick="showPage('D_1995_Rival_5')">Sayaka Shimizu</button>
+          <button onclick="showPage('D_1995_Rival_6')">Kanako Ashira</button>
+          <button onclick="showPage('D_1995_Rival_7')">Kaori Hatsumomo</button>
+          <button onclick="showPage('D_1995_Rival_8')">Tatsuo Yuka</button>
+          <button onclick="showPage('D_1995_Rival_9')">Yukie Nakama</button>
+          <button onclick="showPage('D_1995_Rival_10')">Chinami Fukushima</button><br><br><hr>
+          <h2>Important:</h2>
+          <button onclick="showPage('D_1995...')">...</button><hr>
+          <h2>Other:</h2>
+          <button onclick="showPage('D_1995...')">...</button><hr>
+          <p><i>Click on specific character to load.</i></p>
+        </div>
+      </div>
+      <div>
+        <!-- DeadlyDesires_Main -->
+        <div>
+          <div id="D_1995_Hiroaki" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_11_Erika" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      
+        <!-- DeadlyDesires_Rivals -->
+        <div>
+          <div id="D_1995_Rival_1" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_2" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_3" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_4" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_5" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_6" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_7" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_8" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_9" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_1995_Rival_10" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      
+        <!-- DeadlyDesires_Others -->
+        <div>
+          <div id="D_1995..." class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_1995_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      </div>
+     
+      <!-- 2035s Mode -->
+      <div id="D_2035_Characters" class="page" style="display: none;">
+       <button class="Characters_Section_Back_Button" onclick="showPage('D_Mode')">← Back</button><br><br>
+        <div class="ModTrilogy_Section_div">
+          <h1>Choose a character:</h1>
+          <h2>Senpai:</h2>
+          <button onclick="showPage('D_2035_Hitomu')">Hitomu Nakamura</button><br><br><hr>
+          <h2>Protagonist:</h2>
+          <button onclick="showPage('D_H_15_Amaya')">Amaya Hayashi</button><br><br><hr>
+          <h2>Rivals:</h2>
+          <button onclick="showPage('D_2035_Rival_1')">1. Rival</button>
+          <button onclick="showPage('D_2035_Rival_2')">2. Rival</button>
+          <button onclick="showPage('D_2035_Rival_3')">3. Rival</button>
+          <button onclick="showPage('D_2035_Rival_4')">4. Rival</button>
+          <button onclick="showPage('D_2035_Rival_5')">5. Rival</button><br><br><hr>
+          <h2>Important:</h2>
+          <button onclick="showPage('D_2035...')">...</button><hr>
+          <h2>Other:</h2>
+          <button onclick="showPage('D_2035...')">...</button><hr>
+          <p><i>Click on specific character to load.</i></p>
+        </div>
+      </div>
+      <div>
+        <!-- DeadlyDesires_Main -->
+        <div>
+          <div id="D_2035_Hitomu" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_H_15_Amaya" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      
+        <!-- DeadlyDesires_Rivals -->
+        <div>
+          <div id="D_2035_Rival_1" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_2035_Rival_2" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_2035_Rival_3" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_2035_Rival_4" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="D_2035_Rival_5" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      
+        <!-- DeadlyDesires_Others -->
+        <div>
+          <div id="D_2035..." class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('D_2035_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- SPOILER -->
+    <div>
+      <div id="D_Hayashi_Characters_SPOILER" class="page" style="display: none;">
+        <button class="Characters_Section_Back_Button" onclick="showPage('D_Mode')">← Back</button><br><br>
+        <div class="ModTrilogy_Section_div">
+          <h1>Hayashi Members:</h1> <!--10-->
+          <h2>1780:</h2><button onclick="showPage('D_H_1_Kaede')">Kaede Hayashi</button><br><br>
+          <h2>1800:</h2><button onclick="showPage('D_H_2_Hanako')">Hanako Hayashi</button><br><br>
+          <h2>1830:</h2><button onclick="showPage('D_H_3_Tomiko')">Tomiko Hayashi</button><br><br>
+          <h2>1850:</h2><button onclick="showPage('D_H_5_Sakura')">Sakura Hayashi</button><br><br>
+          <h2>1895:</h2><button onclick="showPage('D_H_7_Aosaki')">Aosaki Hayashi</button><br><br>
+
+          <h2>1918:</h2><button onclick="showPage('D_H_8_Chiyo')">Chiyo Hayashi</button><br><br>
+          <h2>1975:</h2><button onclick="showPage('D_H_10_Sayuri')">Sayuri Hayashi</button><br><br>
+          <h2>1995:</h2><button onclick="showPage('D_H_11_Erika')">Erika Hayashi</button>
+                        <button onclick="showPage('D_H_12_Aoiro')">Aoiro Hayashi</button><br><br>
+          <h2>2035:</h2><button onclick="showPage('D_H_15_Amaya')">Amaya Hayashi</button><br><br>
+          <hr><hr><hr><hr>
+          <h1>Corrupted Hayashi Members:</h1>
+          <h1>Alive:</h1> <!--2 Alive-->
+          <h2>1950:</h2><button onclick="showPage('D_H_9_Ayame')">Ayame Hayashi</button><br><br>
+          <h2>2001:</h2><button onclick="showPage('D_H_13_Misaki')">Misaki Hayashi</button><br><br><hr>
+          <h1>Dead:</h1> <!--3 Dead-->
+          <h2>1830:</h2><button onclick="showPage('D_H_4_Renji')">Renji Hayashi</button><br><br>
+          <h2>1895:</h2><button onclick="showPage('D_H_6_Maono')">Maono Hayashi</button><br><br>
+          <h2>2010:</h2><button onclick="showPage('D_H_14_Kana')">Kana Hayashi</button><br><br>
+          <hr>
+          <p><i>Click on specific character to load.</i></p>
+        </div>
+      </div>
+      <div>
+        <div id="D_H_1_Kaede" class="page" style="display: none;">
+          <button class="Characters_Section_Back_Button" onclick="showPage('D_Hayashi_Characters')">← Back</button><br>
+          <h2 class="Characters_Section_Top_Text_NoImage">Kaede Hayashi</h2>
+          <div class="Characters_Section_Sub_Text_NoImage">
+            <i>
+              <p>There are cruel people in the world. Then there are monsters who love cruelty - who find art in agony and music in the final scream of a dying rival. Kaede Hayashi was one of those people. She was the very first. The origin of a cursed bloodline that would carry her name for generations. History forgets her face, but never her legacy. Cold, obsessive, and psychopathic in both mind and soul, Kaede believed that love was a war - and one that must leave no survivors. She didn’t see rivals. She saw trespassers. And trespassers didn’t deserve mercy - only pain. Kaede Hayashi was not content to "win" her Senpai. She wanted him to look at her, and only her, with eyes that never blinked elsewhere. Possession was not enough. There had to be elimination. Silence. Obedience. Fear. And once she had him, there had to be nothing left of the others - no memory, no whisper, no burial. It wasn’t just love. It was domination.</p><br>
+              <p>From this obsession, she carved out a rule. One that would haunt every Hayashi after her like a blood-bound law: <br>"If you are born a Hayashi, You must win your Senpai. And you must be the only one left standing."<br><br>This was not advice. It was survival. A tradition soaked in violence and bound by blood. If a Hayashi failed to follow the rule, they would face a terrible fate: Corruption.<br><br>Once it began, the soul would rot from within - turning the Hayashi into something less than human, twisted by obsession and hatred, forever stained. But Kaede added one more layer to her cruel legacy, a failsafe born from paranoia:<br><br>- A corrupted Hayashi has only one chance to flee.<br>- If seen with a non-corrupted member,<br>- that member must eliminate them - slowly and painfully.<br>- Failing to do so will result in their own corruption.<br><br>This was Kaede’s gift. A curse designed to protect the bloodline by destroying the weak. She had no mercy in her bones. Her pleasure came from screams, from psychological destruction, from watching her victims beg until they could no longer make sound. Violence wasn't a means to an end - it was the end. No photographs remain. No gravesite is marked. Her name is never spoken outside the family.<br> And yet, her shadow walks behind every Hayashi girl or boy, whispering the same vow:<br>"Win. Eliminate. Or be erased."</p><br>
+              <p>Some say Kaede vanished, that she simply walked away once her work was done. Others believe her blood still exists in hidden corridors - alive and waiting, watching her descendants from the dark.Whatever the truth is, one thing remains certain: She was the most dangerous Hayashi that ever lived.</p>
+            </i>
+          </div><br>
+          <div class="Characters_Section_Panel_NoImage">
+            <div><span><b>Role</b>: <i>The Founder of the Rule</i></span></div><br><br>
+            <div><span><b>Status</b>: <i>Deceased</i></span></div><br><br>
+            <div><span><b>Personality</b>: <i>Cold and Obsessive</i></span></div><br><br>
+            <div><span><b>Appearance</b>: <i>1780</i></span></div><br><br>
+            <div><span><b>Weakness</b>: <i>None</i></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SPOILER -->
+
+    <div id="H_Characters" class="page" style="display: none;">
+      <button class="Characters_Section_Back_Button" onclick="showPage('Mods')">← Back</button><br>
+      <div class="ModTrilogy_Section_div">
+        <h1>Choose a character:</h1>
+        <h2>Senpai:</h2>
+        <button onclick="showPage('H_Senpai')">Senpai</button><br><br><hr>
+        <h2>Protagonist:</h2>
+        <button onclick="showPage('Hanarei')">Hanarei Aishi</button><br><br><hr>
+        <h2>Rivals:</h2>
+        <button onclick="showPage('H_Rival_1')">1. Rival</button>
+        <button onclick="showPage('H_Rival_2')">2. Rival</button>
+        <button onclick="showPage('H_Rival_3')">3. Rival</button>
+        <button onclick="showPage('H_Rival_4')">4. Rival</button>
+        <button onclick="showPage('H_Rival_5')">5. Rival</button>
+        <button onclick="showPage('H_Rival_6')">6. Rival</button>
+        <button onclick="showPage('H_Rival_7')">7. Rival</button>
+        <button onclick="showPage('H_Rival_8')">8. Rival</button>
+        <button onclick="showPage('H_Rival_9')">9. Rival</button>
+        <button onclick="showPage('H_Rival_10')">10. Rival</button><br><br><hr>
+        <h2>Important:</h2>
+        <button onclick="showPage('h...')">...</button><hr>
+        <h2>Other:</h2>
+        <button onclick="showPage('h...')">...</button><hr>
+        <p><i>Click on specific character to load.</i></p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <!-- HanareiMod_Main -->
+        <div>
+          <div id="H_Senpai" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="Hanarei" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      
+        <!-- HanareiMod_Rivals -->
+        <div>
+          <div id="H_Rival_1" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_2" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_3" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_4" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_5" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_6" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_7" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_8" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_9" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+          <div id="H_Rival_10" class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      
+        <!-- HanareiMod_Others -->
+        <div>
+          <div id="h..." class="page" style="display: none;">
+            <button class="Characters_Section_Back_Button" onclick="showPage('H_Characters')">← Back</button><br>
+            <i>
+              <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div id="Clarifications" class="page" style="display: none;">
+      <h1 class="Clarifications_Section_h1">Clarifications</h1>
+      <p>This page is only reserved for Clarifications about my Project and mods within.</p>
+      <p>This page might be updated depending on my mindset.</p><br><hr>
+      <div class="Clarifications_Section_div_nav">
+        <h2 class="Clarifications_Section_h2">#1</h2>
+        <button onclick="showPage('1_CL_Project_Info')" class="Clarifications_Section_Button">Project Information</button>
+        <h2 class="Clarifications_Section_h2">#2</h2>
+        <button onclick="showPage('2_CL_Project_StaffVolunteers')" class="Clarifications_Section_Button">Project Staff & Volunteers</button>
+        <h2 class="Clarifications_Section_h2">#3</h2>
+        <button onclick="showPage('3_CL_Project_Mods')" class="Clarifications_Section_Button">Mods</button>
+        <h2 class="Clarifications_Section_h2">#4</h2>
+        <button onclick="showPage('4_CL_Project_Lore')" class="Clarifications_Section_Button">Project Lore</button>
+        <h2 class="Clarifications_Section_h2">#5</h2>
+        <button onclick="showPage('5_CL_Project_Discord')" class="Clarifications_Section_Button">Discord</button>
+      </div>
+    </div>
+    <div>
+      <div id="1_CL_Project_Info" class="page" style="display: none;">
+        <button class="Clarifications_Section_Back_Button" onclick="showPage('Clarifications')">← Back</button><br><br>
+        <div class="Clarifications_Section_Panel">
+          <h2 class="Clarifications_Section_Top_Text">Project Info</h2>
+          <p class="Clarifications_Section_Sub_Text">
+            <i>
+              <h1>There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </p>
+        </div>
+      </div>
+      <div id="2_CL_Project_StaffVolunteers" class="page" style="display: none;">
+        <button class="Clarifications_Section_Back_Button" onclick="showPage('Clarifications')">← Back</button><br><br>
+        <div class="Clarifications_Section_Panel">
+          <h2 class="Clarifications_Section_Top_Text">Project Staff & Volunteers</h2><br>
+          <p class="Clarifications_Section_Sub_Text">
+            <h1>Thank you!</h1>
+            <i>
+              <p>I want to thank every staff and volunteer for helping me, even though your work may be small or big. I am always happy for people who are helping me!</p>
+              <p>Every time when anyone who is involved in the project or is just helping out, I am always greatful for it, but sometimes... I don't know how to show it, so I just reply with a wholesome-gif.</p>
+              <p>Every small gesture towards <b>''Project HLJ''</b> will always put a big warm hug on my heart. Can't thank you enough for every small thing you do for me to make this project come into reality!</p>
+            </i>
+          </p>
+        </div>
+      </div>
+      <div id="3_CL_Project_Mods" class="page" style="display: none;">
+        <button class="Clarifications_Section_Back_Button" onclick="showPage('Clarifications')">← Back</button><br><br>
+        <div class="Clarifications_Section_Panel">
+          <h2 class="Clarifications_Section_Top_Text">Project Mods</h2>
+          <p class="Clarifications_Section_Sub_Text">
+            <h2><ins>Sakura Mod</ins></h2>
+            <i>
+              <p>Sakura Mod will and always be 1.Mod in the <b>''Project HLJ''.</b></p>
+              <p>The theme of Sakura Mod is <b>Tutorial</b>.</p>
+            </i><br>
+            <p>Some people may be confused about the rivals, here is a better response:</p>
+            <i>
+              <p>Ayano <b>did</b> eliminate all 10 rivals (From Osana to Megami) in Yandere Simulator, but after 1 week of <b>''Free Activities''</b>...</p>
+              <p>Info-chan will text Ayano about  <b>New Rival</b> and <b>''10 Rivals Circle''</b> is hapenning again and after that Ayano will finally have a chance to confess to her Senpai.</p>
+            </i><br><br>
+            <h2><ins>Deadly Desires</ins></h2>
+            <i>
+              <p>Deadly Desires will and always be 2.Mod in the <b>''Project HLJ''.</b></p>
+              <p>The theme of Sakura Mod is <b>Fashion</b>.</p>
+            </i><br>
+            <p>The Modes:</p>
+            <i>
+              <p><b>1995s Mode</b> is a mode where you play as <b>Erika Hayashi</b>, where you have to eliminate 10 Rivals across 10 school weeks.</p>
+              <p><b>2035s Mode</b> is a mode where you play as <b>Amaya Hayashi</b>, where you have to eliminate 5 Rivals in 1 school week.</p>
+            </i><br><br>
+            <h2><ins>Hanarei Love Journey</ins></h2>
+            <i>
+              <p>Hanarei Love Journey will and always be 3.Mod in the <b>''Project HLJ''.</b></p>
+              <p>The theme of Sakura Mod is <b>Music</b>.</p>
+            </i><br>
+            <p>The Final Mod:</p>
+            <i>
+              <p>Hanarei Love Journey is the last mod in this project, but that doesn't mean I will not make anymore <b>''Project HLJ''</b> content.</p>
+              <p>I plan to work on other stuff, regarding the <b>Mod</b> where you play as <b>Erika's Mother</b>, which I want to make the most challenging mod out of the whole <b>''Project HLJ''</b>.</p>
+            </i>
+            <p>So, what does that mean?... It means I will not stop creating Related-Stuff for <b>''Project HLJ''</b>, but also, if I will finish the Project, I plan to work on smaller games, specificly a <b>''C-Languages-Text-Based-Games''</b>. There is a <b>LOT</b> for me to offer to you, since I love coding and programming <i>(I know, same thing)</i>, I want to show all my skills to you and I hope you will enjoy my content!</p>
+        </div><br>
+      </div>
+      <div id="4_CL_Project_Lore" class="page" style="display: none;">
+        <button class="Clarifications_Section_Back_Button" onclick="showPage('Clarifications')">← Back</button><br><br>
+        <div class="Clarifications_Section_Panel">
+          <h2 class="Clarifications_Section_Top_Text">Project Lore</h2>
+          <p class="Clarifications_Section_Sub_Text">
+            <i>
+              <h1>There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </p>
+        </div>
+      </div>
+      <div id="5_CL_Project_Discord" class="page" style="display: none;">
+        <button class="Clarifications_Section_Back_Button" onclick="showPage('Clarifications')">← Back</button><br><br>
+        <div class="Clarifications_Section_Panel">
+          <h2 class="Clarifications_Section_Top_Text">Project Discord</h2>
+          <p class="Clarifications_Section_Sub_Text">
+            <i>
+              <h1>There is nothing to see here</h1>
+              <h2>...yet...</h2>
+            </i>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="BugsReport" class="page" style="display: none;">
+      <h1><ins>Bugs Reports</ins></h1>
+      <p>This page is only reserved for bugs or new additional stuff that might be added into mods.</p>
+      <p>Right now, this page is little bit messy, but it will be changed in the future.</p><br><hr><br>
+      <div class="Bugs_Section_div">
+        <h1 class="Bugs_Section_h1_h2"><ins>2025</ins></h1>
+        <div>
+          <h2 class="Bugs_Section_h1_h2"><ins>May</ins></h2>
+          <div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 25.5.2025</ins><br>
+                  <div class="Bugs_Section_Button_Top_Text">
+                    <p>Deadly desires has an issue to compile a specific code, meaning some changes will make quit or close itself.</p>
+                    <p>Right now, what I will try to do will be change the build of yandere simulator to try make it better, however, the idea to change the build will make me put everything I made into the current build I will choose, it will take more time I thought it would be.</p>
+                    <p>I apologize from my heart to people who are waiting for a progress and for release of Sakura Mod, but there are some issues with code I have to fix first.</p>
+                    <p>Thank you everyone for support and hope you will have beautiful day/night.</p>
+                    <p>thank you for following the development of HLJ project! ✨</p>
+                  </div>
+              </button>
+            </div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 25.5.2025</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>This report is mainly for Deadly desires, I apologize if you wanted to see some reports for Sakura Mod, I am working on it, however, there are not many updates or reports I could talk about, because they would not be so important, but yeah, I hope you will enjoy this too.</p><br>
+                  <i>
+                    <p>- Every rival should now have their specific way to be eliminated</p>
+                    <p>- Rival’s specific elimination for S+ or True ending were changed</p>
+                    <p>- Senpai in 1995s Mode and 2035s Mode are fully functional</p>
+                    <p>- Protagonist should now have at the start +10 reputation</p>
+                    <p>- There is now a new monologue in 1995s Mode</p>
+                    <p>- Lore about Rivals in 1995s Mode is 100%</p>
+                    <p>- Lore about Hayashi Family is now 60%</p>
+                  </i>
+                </div>
+              </button>
+            </div>
+          </div>
+          <br><br>
+          <h2 class="Bugs_Section_h1_h2"><ins>April</ins></h2>
+          <div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 13.4.2025</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>Hey! Long time no see, unfortunately there is not really much of a improvements and other stuff, bcs of me graduation soon, however I hope you can understand that!</p><br>
+                  <i>
+                    <p>- Attempted to make everyday event where Senpai and Rival talks, but failed yet again after 10 times</p>
+                    <p>- Worked little bit more on Rivals from Deadly desires, more as making their code a bit readable</p>
+                    <p>- Attempted to modify the new script for confession scene, it caused more bugs, deleted it</p>
+                    <p>- Emi had the same opinions as Raiburu, from now on, she has her own opinions</p>
+                    <p>- Changed 1989s tutorial sequence, now it shows text the way I wanted it to</p>
+                    <p>- Lore about Rivals in Sakura mod are 25% completed</p>
+                    <p>- Lore about Hayashi family is now 50% completed</p>
+                    <p>- Changed 2 opinions in Midu’s likes/dislikes</p>
+                    <p>- Added 1 new character to the 1995s mode</p>
+                  </i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <h1 class="Bugs_Section_h1_h2"><ins>2024</ins></h1>
+        <div>
+          <h2 class="Bugs_Section_h1_h2"><ins>December</ins></h2>
+          <div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 22.12.2024</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>This post is about adding stuff.</p><br>
+                  <i>
+                    <p>- Added 10 more characters in deadly desires</p>
+                    <p>- Changed little bit information about Emi</p>
+                    <p>- Added Senpai to 2035s Mode</p>
+                    <p>- Added Senpai to 1995s Mode</p>
+                    <p>- Emi now fully functions</p>
+                    <p>- Added 2 protagonists</p><br>
+                    <p>- Added sskx/8;6-9,) to a lore</p>
+                    <p>Wait... was I suppose to say that? </p>
+                  </i>
+                </div>
+              </button>
+            </div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 2.12.2024</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>Minor bug fixes and added/changed some small things (some important, some less important)</p><br>
+                  <i>
+                    <p>- Added senpai (1995s mode) information in deadly desire character posts</p>
+                    <p>- Slightly changed Emi’s likes about nature and cats</p>
+                    <p>- Added new props outside of the gym and fire area</p>
+                    <p>- Fixed txt file in week 1 Tuesday event</p>
+                    <p>- Added a cherry trees next to gym</p>
+                    <p>- Fixed Ayano’s running animation</p>
+                    <p>- Fixed Ayano’s walking animation</p>
+                    <p>- Added benches in the pool area</p>
+                    <p>- Fixed Gardening Club Assests</p>
+                    <p>- Fixed a code in school script</p>
+                    <p>- Fixed Ayano’s idle animation</p>
+                    <p>- Changed 5. Rival reputation</p>
+                    <p>- Fixed a cutscene problem</p>
+                    <p>- Fixed a DLL problem</p>
+                  </i>
+                </div>
+              </button>
+            </div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 2.12.2024</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>Wow another big bug and changes/improvements update x)</p>
+                  <p>Definitly didn’t took 2 days to fix and add stuff.</p><br>
+                  <i>
+                    <p>- Fixed a minor bug where Emi was glitching when you killed Midu in front of her</p>
+                    <p>- Fixed a bug where Midu and Ema where ignoring giggles or laughs</p>
+                    <p>- Slightly changed The future rivals personalitty and reputation</p>
+                    <p>- Fixed Emi’s Strenght, now she will act like a social butterfly</p>
+                    <p>- Created Emi’s portrait, reputation, and additional info</p>
+                    <p>- Fixed Emi’s buggy and glitchy walking animation</p>
+                    <p>- Created a little command for official demo</p>
+                    <p>- Fixed a bug where Emi is ignoring player</p>
+                    <p>- Changed Emi’s and Midu’s reputation</p>
+                    <p>- Changed Emi’s likes and dislikes</p>
+                    <p>- Fixed Midu’s pathfinding routine</p>
+                    <p>- Updated Midu’s additional info</p>
+                    <p>- Fixed Emi’s walking animation</p>
+                    <p>- Fixed Emi’s running animation</p>
+                    <p>- Changed Emi’s Strenght</p>
+                  </i>
+                </div>
+              </button>
+            </div>
+          </div>
+          <br><br>
+          <h2 class="Bugs_Section_h1_h2"><ins>October</ins></h2>
+          <div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 24.10.2024</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>Another Bug fixes!</p><br>
+                  <i>
+                    <p>- Fixed a bug where raiburu was ignoring midu’s corpse</p>
+                    <p>- Yet again fixed a command for school environment</p>
+                    <p>- Fixed a code for loading midu’s accesories</p>
+                    <p>- Fixed a code that would not work properly</p>
+                    <p>- Fixed a bug for Matchmaking process</p>
+                    <p>- Fixed Midu’s idle and walk animation</p>
+                    <p>- Fixed a command for two students</p>
+                    <p>- Fixed a certain hairstyle problem</p>
+                    <p>- Fixed a typo of one certain code</p>
+                    <p>- Slightly changed Midu’s portrait</p>
+                    <p>- Fixed a typo in the main menu</p>
+                    <p>- Fixed Midu’s talking animation</p>
+                    <p>- Fixed taro’s walking animation</p>
+                    <p>- Fixed Midu’s armband texture</p>
+                    <p>- Fixed a typo in txt.file</p>
+                    <p>- Fixed Midu’s routine</p>
+                  </i>
+                </div>
+              </button>
+            </div>
+          </div>
+          <br><br>
+          <h2 class="Bugs_Section_h1_h2"><ins>January</ins></h2>
+          <div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 24.1.2024</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>Another Bug fixes!</p><br>
+                  <i>
+                    <p>- Fixed a bug that would accur that if a player will kill a random student they would get stuck</p>
+                    <p>- Fixed a typo where a certain (txt.file) would not work in schoolscene </p>
+                    <p>- Fixed a bug that made The new enviroment not load properly</p>
+                    <p>- Fixed a pathfinding problem for Midu</p>
+                    <p>- Fixed a typo in a sentence</p>
+                  </i>
+                </div>
+              </button>
+            </div>
+            <div>
+              <button class="Bugs_Section_Button_Top_Text">
+                <ins class="Bugs_Section_Build">Build 8.1.2024</ins><br>
+                <div class="Bugs_Section_Button_Top_Text">
+                  <p>Another Bug fixes!</p><br>
+                  <i>
+                    <p>- Fixed a bug when player would get stuck at start of the day on Tuesday</p>
+                    <p>- Fixed a bug where two students would ignore their new routines</p>
+                    <p>- Fixed a bug where Midu would not have a certain hairstyle</p>
+                  </i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--
+        <div>
+          <button class="Bugs_Section_Button_Top_Text">
+            <ins>Build D/M/Y</ins><br>
+            <div class="Bugs_Section_Button_Top_Text">
+              <p>Reason</p><br>
+              <i>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+                <p>- </p>
+              </i>
+            </div>
+          </button>
+        </div>
+    -->
+    </div>
+    <div id="Contact" class="page" style="display: none;">
+      <h1>Contact Me!</h1>
+      <h3>This page is only reserved if you wanna contact the owner of the project, the following links might help you contact me.</h3><br><hr><br>
+      <button class="Contact_Section_Button_Panel"><ins><b>E-mail</b></ins><br><br>max850123uwu@gmail.com</button><br><br><br>
+      <button class="Contact_Section_Button_Panel"><ins><b>Discord (Direct Messages)</b></ins><br><br>max850123uwu</button><br><br><hr>
+    </div>
+    <div id="SocialMedia" class="page" style="display: none;">
+      <i>
+        <h1 style="margin-top: 250px;">There is nothing to see here</h1>
+        <h2>...yet...</h2>
+      </i>
+    </div>
+  </main>
+  <!-- Page Content -->
+ 
+  <footer id="Update_Footer"></footer>
+  <script>
+    function showPage(pageName){
+      const pages = document.querySelectorAll('.page');
+      const pageToShow = document.getElementById(pageName);
+      pages.forEach(page => page.style.display = 'none');
+      if (pageName === 'ModTrilogy'){
+        document.getElementById('ModTrilogy').style.display = 'block';
+        return;
+      }
+      if (pageToShow){
+        pageToShow.style.display = 'block';
+      }
+    }
+    function UpdateFooterYear(){
+      const baseYear = 2025;
+      const currentYear = new Date().getFullYear();
+      const footer = document.getElementById("Update_Footer");
+      if(currentYear > baseYear){
+        footer.textContent = `© ${baseYear} - ${currentYear} Developed and maintained by MaxUwU`;
+      }else{
+        footer.textContent = `© ${baseYear} Developed and maintained by MaxUwU`;
+      }
+    }
+    window.onload = function(){
+      showPage('Home');
+      ShowComingSoonTxT();
+      UpdateFooterYear();
+    }
+  </script>
+</body>
+</html>
